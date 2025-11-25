@@ -214,6 +214,8 @@ const audiosByMonth = {
 
 export default function App() {
   const [openMonths, setOpenMonths] = useState({ November: true })
+  const buildTime = import.meta.env.VITE_BUILD_TIME;
+
   return (
     <div className="app">
       <header>
@@ -223,7 +225,7 @@ export default function App() {
       <main>
         <p>Welcome to my portfolio and progress archive, take a look around. 🙂</p>
         <p style={{ opacity: 0.7 }}>
-          Last updated: {import.meta.env.VITE_LAST_DEPLOY}
+          Last updated: {new Date(buildTime).toLocaleString('en-GB')}
         </p>
         <section>
           <h2>Recordings</h2>

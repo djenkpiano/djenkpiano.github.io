@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "powershell -Command \"Set-Content .env \\\"VITE_BUILD_TIME=$(Get-Date -Format o)\\\"\"; vite build",
+    "deploy": "npm run build && gh-pages -d dist",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "echo \"VITE_LAST_DEPLOY=$(date)\" > .env && vite build && gh-pages -d dist"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "react": "^18.2.0",
