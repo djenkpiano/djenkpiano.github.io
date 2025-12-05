@@ -3,6 +3,31 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "December 2025": [
     {
+      id: 51,
+      title: 'Fantaisie Impromptu 276hrs',
+      src: '/piano/Fantaisie Impromptu 276hrs.m4a',
+    },
+    {
+      id: 50,
+      title: 'Moonlight 3rd 276hrs',
+      src: '/piano/Moonlight 3rd 276hrs.m4a',
+    },
+    {
+      id: 49,
+      title: 'Fantaisie Impromptu 275hrs',
+      src: '/piano/Fantaisie Impromptu 275hrs.m4a',
+    },
+    {
+      id: 48,
+      title: 'Fantaisie Impromptu 273hrs',
+      src: '/piano/Fantaisie Impromptu 273hrs.m4a',
+    },
+    {
+      id: 47,
+      title: 'Moonlight 3rd 273hrs',
+      src: '/piano/Moonlight 3rd 273hrs.m4a',
+    },
+    {
       id: 46,
       title: 'Fantaisie Impromptu 272hrs',
       src: '/piano/Fantaisie Impromptu 272hrs.m4a',
@@ -265,7 +290,9 @@ export default function App() {
       </header>
 
       <main>
-        <p>Welcome to my portfolio and progress archive, take a look around. 🙂</p>
+        <p>Welcome to my portfolio and progress archive, take a look around! 🙂
+          Dream pieces: Faintaisie Impromptu, La Campanella
+        </p>
         <p style={{ opacity: 0.7 }}>
           Last updated: {new Date(buildTime).toLocaleString('en-GB')}
         </p>
