@@ -3,6 +3,31 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "December 2025": [
     {
+      id: 56,
+      title: 'La Campanella 284hrs',
+      src: '/piano/La campanella 284hrs.m4a',
+    },
+    {
+      id: 55,
+      title: 'Fantaisie Impromptu 284hrs',
+      src: '/piano/Fantaisie Impromptu 284hrs.m4a',
+    },
+    {
+      id: 54,
+      title: 'Moonlight 3rd 282hrs',
+      src: '/piano/Moonlight 3rd 282hrs.m4a',
+    },
+    {
+      id: 53,
+      title: 'Fantaisie Impromptu 282hrs',
+      src: '/piano/Fantaisie Impromptu 282hrs.m4a',
+    },
+    {
+      id: 52,
+      title: 'Fantaisie Impromptu 281hrs',
+      src: '/piano/Fantaisie Impromptu 281hrs.m4a',
+    },
+    {
       id: 51,
       title: 'Fantaisie Impromptu 276hrs',
       src: '/piano/Fantaisie Impromptu 276hrs.m4a',
