@@ -3,6 +3,21 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "December 2025": [
     {
+      id: 59,
+      title: 'Idea 25 286hrs',
+      src: '/piano/Idea 25 286hrs.m4a',
+    },
+    {
+      id: 58,
+      title: 'Moonlight Sonata 286hrs',
+      src: '/piano/Moonlight Sonata 286hrs.m4a',
+    },
+    {
+      id: 57,
+      title: 'Rondo Alla Turca (SETUP UGPRADE!!!) 286hrs',
+      src: '/piano/Rondo Alla Turca 286hrs.m4a',
+    },
+    {
       id: 56,
       title: 'La Campanella 284hrs',
       src: '/piano/La campanella 284hrs.m4a',
