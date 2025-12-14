@@ -5,12 +5,12 @@ const audiosByMonth = {
     {
       id: 61,
       title: 'Passacaglia 289hrs',
-      src: '/piano/Passacaglia 289hrs.wav',
+      src: '/piano/Passacaglia 289hrs.m4a',
     },
     {
       id: 60,
       title: 'Fantaisie Impromptu 287hrs',
-      src: '/piano/Fantaisie Impromptu 287hrs.wav',
+      src: '/piano/Fantaisie Impromptu 287hrs.m4a',
     },
     {
       id: 59,
