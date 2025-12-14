@@ -3,6 +3,11 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "December 2025": [
     {
+      id: 60,
+      title: 'Fantaisie Impromptu 287hrs',
+      src: '/piano/Fantaisie Impromptu 287hrs.wav',
+    },
+    {
       id: 59,
       title: 'Idea 25 286hrs',
       src: '/piano/Idea 25 286hrs.m4a',
@@ -14,7 +19,7 @@ const audiosByMonth = {
     },
     {
       id: 57,
-      title: 'Rondo Alla Turca (SETUP UGPRADE!!!) 286hrs',
+      title: 'Rondo Alla Turca (SETUP UPGRADE!!!) 286hrs',
       src: '/piano/Rondo Alla Turca 286hrs.m4a',
     },
     {
@@ -331,7 +336,7 @@ export default function App() {
 
       <main>
         <p>Welcome to my portfolio and progress archive, take a look around! 🙂
-          Dream pieces: Faintaisie Impromptu, La Campanella
+          Dream pieces: Fantaisie Impromptu, La Campanella
         </p>
         <p style={{ opacity: 0.7 }}>
           Last updated: {new Date(buildTime).toLocaleString('en-GB')}
