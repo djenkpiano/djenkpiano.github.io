@@ -3,6 +3,26 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "December 2025": [
     {
+      id: 65,
+      title: 'Nocturne No. 20 291hrs',
+      src: '/piano/Nocturne No. 20 291hrs.wav',
+    },
+    {
+      id: 64,
+      title: 'Fantaisie Impromptu 290hrs',
+      src: '/piano/Fantaisie Impromptu 290hrs.wav',
+    },
+    {
+      id: 63,
+      title: 'La Campanella 289hrs',
+      src: '/piano/La Campanella 289hrs.wav',
+    },
+    {
+      id: 62,
+      title: 'Idea 25 289hrs',
+      src: '/piano/Idea 25 289hrs.wav',
+    },
+    {
       id: 61,
       title: 'Passacaglia 289hrs',
       src: '/piano/Passacaglia 289hrs.m4a',
@@ -395,16 +415,17 @@ export default function App() {
                           {a.type === 'video' ? (
                             <video
                               controls
+                              preload="metadata"
+                              src={encodeURI(a.src)}
                               style={{ width: '100%', maxWidth: 500, backgroundColor: '#000' }}
-                            >
-                              <source src={a.src} type="video/mp4" />
-                              Your browser does not support the video element.
-                            </video>
+                            />
                           ) : (
-                            <audio controls style={{ width: '100%' }}>
-                              <source src={a.src} type="audio/mp4" />
-                              Your browser does not support the audio element.
-                            </audio>
+                            <audio
+                              controls
+                              preload="metadata"
+                              src={encodeURI(a.src)}
+                              style={{ width: '100%' }}
+                            />
                           )}
                         </li>
                       ))}
