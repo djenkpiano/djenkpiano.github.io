@@ -3,9 +3,19 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "December 2025": [
     {
+      id: 69,
+      title: 'Nocturne No. 20 296hrs',
+      src: '/piano/Nocturne No. 20 296hrs.wav',
+    },
+    {
+      id: 68,
+      title: 'Rondo Alla Turca (FULL PERFORMANCE) 294hrs',
+      src: '/piano/Rondo Alla Turca performance 294hrs.wav',
+    },
+     {
       id: 67,
       title: 'Fur Elise (FULL PERFORMANCE) 293hrs',
-      src: '/piano/Fur Elise 293hrs.m4a',
+      src: '/piano/Fur Elise performance 293hrs.wav',
     },
     {
       id: 66,
