@@ -1,7 +1,29 @@
 import React, { useState } from 'react'
 
 const audiosByMonth = {
+  "January 2026": [
+    {
+      id: 83,
+      title: 'La Campanella 334hrs',
+      src: '/piano/La Campanella 334hrs.wav',
+    },
+    {
+      id: 82,
+      title: 'Fantaisie Impromptu 333hrs',
+      src: '/piano/Fantaisie Impromptu 333hrs.wav',
+    },
+    {
+      id: 81,
+      title: 'Clair de Lune 333hrs',
+      src: '/piano/Clair de Lune 333hrs.wav',
+    },
+  ],
   "December 2025": [
+    {
+      id: 80,
+      title: 'Fantaisie Impromptu 319hrs',
+      src: '/piano/Fantaisie Impromptu 319hrs.m4a',
+    },
     {
       id: 79,
       title: 'Fantaisie Impromptu 315hrs',
@@ -9,7 +31,7 @@ const audiosByMonth = {
     },
     {
       id: 78,
-      title: 'Gnossiene No1 314hrs',
+      title: 'Gnossiene No. 1 314hrs',
       src: '/piano/Gnossiene No1 314hrs.wav',
     },
     {
