@@ -3,6 +3,11 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "January 2026": [
     {
+      id: 86,
+      title: 'Waltz in C Sharp Minor (Op.64 No.2) 346hrs',
+      src: '/piano/Waltz in C Sharp Minor (Op.64 No.2) 346hrs.wav',
+    },
+    {
       id: 85,
       title: 'Waltz in C Sharp Minor (Op.64 No.2) 345hrs',
       src: '/piano/Waltz in C Sharp Minor (Op.64 No.2) 345hrs.wav',
