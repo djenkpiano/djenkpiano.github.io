@@ -3,6 +3,16 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "January 2026": [
     {
+      id: 88,
+      title: 'Fantaisie Impromptu 351hrs',
+      src: '/piano/Fantaisie Impromptu 351hrs.wav',
+    },
+    {
+      id: 87,
+      title: 'Moonlight Sonata 3rd Movement 351hrs',
+      src: '/piano/Moonlight Sonata 3rd Movement 351hrs.wav',
+    },
+    {
       id: 86,
       title: 'Waltz in C Sharp Minor (Op.64 No.2) 346hrs',
       src: '/piano/Waltz in C Sharp Minor (Op.64 No.2) 346hrs.wav',
