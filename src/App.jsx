@@ -3,6 +3,11 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "February 2026": [
     {
+      id: 92,
+      title: 'The Tempest 362hrs',
+      src: '/piano/The Tempest 362hrs.wav',
+    },
+    {
       id: 91,
       title: 'Clair de Lune 358hrs',
       src: '/piano/Clair de Lune 358hrs.wav',
@@ -495,7 +500,7 @@ export default function App() {
 
       <main>
         <p>Welcome to my portfolio and progress archive, take a look around! 🙂
-          Dream pieces: Fantaisie Impromptu, La Campanella
+          Dream pieces: The Tempest, Fantaisie Impromptu, La Campanella
         </p>
         <p style={{ opacity: 0.7 }}>
           Last updated: {new Date(buildTime).toLocaleString('en-GB')}
