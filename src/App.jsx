@@ -3,6 +3,11 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "February 2026": [
     {
+      id: 94,
+      title: 'Fantaisie Impromptu 366hrs',
+      src: '/piano/Fantaisie Impromptu 366hrs.wav',
+    },
+    {
       id: 93,
       title: 'Passacaglia 363hrs',
       src: '/piano/Passacaglia 363hrs.wav',
