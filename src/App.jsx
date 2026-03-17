@@ -3,14 +3,24 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "March 2026": [
     {
+      id: 105,
+      title: 'Passacaglia 385hrs',
+      src: '/piano/Passacaglia 385hrs.wav',
+    },
+    {
+      id: 104,
+      title: 'Sonata No. 16 "Sonata Facile" 385hrs',
+      src: '/piano/Sonata No. 16 385hrs.wav',
+    },
+    {
       id: 103,
-      title: 'Fantaisie Impromptu (section A fully memorized) 381hrs',
-      src: '/piano/Fantaisie Impromptu 381hrs.wav',
+      title: 'Sonata No. 16 "Sonata Facile" 382hrs',
+      src: '/piano/Sonata No. 16 382hrs.wav',
     },
     {
       id: 102,
-      title: 'Sonata No. 16 "Sonata Facile" 382hrs',
-      src: '/piano/Sonata No. 16 382hrs.wav',
+      title: 'Fantaisie Impromptu (section A fully memorized) 381hrs',
+      src: '/piano/Fantaisie Impromptu 381hrs.wav',
     },
     {
       id: 101,
