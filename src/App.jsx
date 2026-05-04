@@ -1,6 +1,28 @@
 import React, { useState } from 'react'
 
 const audiosByMonth = {
+  "May 2026": [
+    {
+      id: 113,
+      title: 'Fantaisie Impromptu 421hrs',
+      src: '/piano/Fantaisie Impromptu 421hrs.m4a',
+    },
+    {
+      id: 112,
+      title: 'Clair Obscur: Alicia 421hrs',
+      src: '/piano/Clair Obscur Alicia 421hrs.m4a',
+    },
+    {
+      id: 111,
+      title: 'Passacaglia 421hrs',
+      src: '/piano/Passacaglia 421hrs.m4a',
+    },
+    {
+      id: 110,
+      title: 'Kawai K300 ATX4 UPGRADE!! Rondo Alla Turca 421hrs',
+      src: '/piano/Rondo alla turca 421hrs.m4a',
+    },
+  ],
   "April 2026": [
     {
       id: 109,
