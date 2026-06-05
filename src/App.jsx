@@ -1,6 +1,33 @@
 import React, { useState } from 'react'
 
 const audiosByMonth = {
+  "June 2026": [
+    {
+      id: 118,
+      title: 'Fantaisie Impromptu 439hrs',
+      src: '/piano/Fantaisie Impromptu 439hrs.m4a',
+    },
+    {
+      id: 117,
+      title: 'Gnossienne No.1 439hrs',
+      src: '/piano/Gnossienne No1 439hrs.m4a',
+    },
+    {
+      id: 116,
+      title: 'Prelude in E minor 439hrs',
+      src: '/piano/Prelude in E minor 439hrs.m4a',
+    },
+    {
+      id: 115,
+      title: 'Raindrop Prelude (messy) 439hrs',
+      src: '/piano/Raindrop Prelude 439hrs.m4a',
+    },
+    {
+      id: 114,
+      title: 'Rondo Alla Turca 439hrs',
+      src: '/piano/Rondo Alla Turca 439hrs.m4a',
+    },
+  ],
   "May 2026": [
     {
       id: 113,
@@ -610,8 +637,8 @@ export default function App() {
       </header>
 
       <main>
-        <p>Welcome to my portfolio and progress archive, take a look around! 🙂
-          Dream pieces: The Tempest, Fantaisie Impromptu, La Campanella
+        <p>Welcome to my portfolio and progress archive, take a look around! 🙂<br></br>
+          Dream pieces: Raindrop Prelude, The Tempest, Fantaisie Impromptu, La Campanella
         </p>
         <p style={{ opacity: 0.7 }}>
           Last updated: {new Date(buildTime).toLocaleString('en-GB')}
