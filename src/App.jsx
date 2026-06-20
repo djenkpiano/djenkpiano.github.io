@@ -3,6 +3,36 @@ import React, { useState } from 'react'
 const audiosByMonth = {
   "June 2026": [
     {
+      id: 124,
+      title: 'Raindrop Prelude 450hrs',
+      src: '/piano/Raindrop 450hrs.wav',
+    },
+    {
+      id: 123,
+      title: 'Rondo Alla Turca 450hrs',
+      src: '/piano/Rondo Alla Turca 450hrs.wav',
+    },
+    {
+      id: 122,
+      title: 'Fantaisie Impromptu 450hrs',
+      src: '/piano/Fantaisie Impromptu 450hrs.wav',
+    },
+    {
+      id: 121,
+      title: 'Gnossienne No.1 450hrs',
+      src: '/piano/Gnossienne no1 450hrs.wav',
+    },
+    {
+      id: 120,
+      title: 'Moonlight Sonata 450hrs (NEW MP MIC SETUP)',
+      src: '/piano/Moonlight Sonata 450hrs.wav',
+    },
+    {
+      id: 119,
+      title: 'Raindrop Prelude 442hrs',
+      src: '/piano/Raindrop 442hrs.wav',
+    },
+    {
       id: 118,
       title: 'Fantaisie Impromptu 439hrs',
       src: '/piano/Fantaisie Impromptu 439hrs.m4a',
