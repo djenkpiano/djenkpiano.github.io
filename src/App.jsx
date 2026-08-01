@@ -1,6 +1,28 @@
 import React, { useState } from 'react'
 
 const audiosByMonth = {
+  "August 2026": [
+    {
+      id: 128,
+      title: 'Raindrop Prelude 471hrs',
+      src: '/piano/Raindrop Prelude 471hrs.wav',
+    },
+    {
+      id: 127,
+      title: 'Tempest 3rd Mov 471hrs',
+      src: '/piano/Tempest 3rd Mov 471hrs.wav',
+    },
+    {
+      id: 126,
+      title: 'Rondo Alla Turca 471hrs',
+      src: '/piano/Rondo Alla Turca 471hrs.wav',
+    },
+    {
+      id: 125,
+      title: 'Fantaisie Impromptu 471hrs',
+      src: '/piano/Fantaisie Impromptu 471hrs.wav',
+    },
+  ],
   "June 2026": [
     {
       id: 124,
