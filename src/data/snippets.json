@@ -1,0 +1,1199 @@
+[
+  {
+    "id": 133,
+    "file": "Lalaland 482hrs.wav",
+    "piece": "mia-and-sebastian",
+    "hours": 482,
+    "date": "2026-08-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 132,
+    "file": "Raindrop Prelude (FULL) 481hrs.wav",
+    "piece": "raindrop-prelude",
+    "hours": 481,
+    "date": "2026-08-15",
+    "note": "FULL",
+    "type": "audio"
+  },
+  {
+    "id": 131,
+    "file": "Tempest 3rd Mov 481hrs.wav",
+    "piece": "tempest-3",
+    "hours": 481,
+    "date": "2026-08-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 130,
+    "file": "Ballade No1 in G minor 481hrs.wav",
+    "piece": "ballade-1",
+    "hours": 481,
+    "date": "2026-08-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 129,
+    "file": "Fantaisie Impromptu 481hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 481,
+    "date": "2026-08-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 128,
+    "file": "Raindrop Prelude 471hrs.wav",
+    "piece": "raindrop-prelude",
+    "hours": 471,
+    "date": "2026-08-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 127,
+    "file": "Tempest 3rd Mov 471hrs.wav",
+    "piece": "tempest-3",
+    "hours": 471,
+    "date": "2026-08-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 126,
+    "file": "Rondo Alla Turca 471hrs.wav",
+    "piece": "rondo-alla-turca",
+    "hours": 471,
+    "date": "2026-08-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 125,
+    "file": "Fantaisie Impromptu 471hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 471,
+    "date": "2026-08-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 124,
+    "file": "Raindrop 450hrs.wav",
+    "piece": "raindrop-prelude",
+    "hours": 450,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 123,
+    "file": "Rondo Alla Turca 450hrs.wav",
+    "piece": "rondo-alla-turca",
+    "hours": 450,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 122,
+    "file": "Fantaisie Impromptu 450hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 450,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 121,
+    "file": "Gnossienne no1 450hrs.wav",
+    "piece": "gnossienne-1",
+    "hours": 450,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 120,
+    "file": "Moonlight Sonata 450hrs.wav",
+    "piece": "moonlight-1",
+    "hours": 450,
+    "date": "2026-06-15",
+    "note": "NEW MP MIC SETUP",
+    "type": "audio"
+  },
+  {
+    "id": 119,
+    "file": "Raindrop 442hrs.wav",
+    "piece": "raindrop-prelude",
+    "hours": 442,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 118,
+    "file": "Fantaisie Impromptu 439hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 439,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 117,
+    "file": "Gnossienne No1 439hrs.m4a",
+    "piece": "gnossienne-1",
+    "hours": 439,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 116,
+    "file": "Prelude in E minor 439hrs.m4a",
+    "piece": "prelude-e-minor",
+    "hours": 439,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 115,
+    "file": "Raindrop Prelude 439hrs.m4a",
+    "piece": "raindrop-prelude",
+    "hours": 439,
+    "date": "2026-06-15",
+    "note": "messy",
+    "type": "audio"
+  },
+  {
+    "id": 114,
+    "file": "Rondo Alla Turca 439hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 439,
+    "date": "2026-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 113,
+    "file": "Fantaisie Impromptu 421hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 421,
+    "date": "2026-05-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 112,
+    "file": "Clair Obscur Alicia 421hrs.m4a",
+    "piece": "clair-obscur-alicia",
+    "hours": 421,
+    "date": "2026-05-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 111,
+    "file": "Passacaglia 421hrs.m4a",
+    "piece": "passacaglia",
+    "hours": 421,
+    "date": "2026-05-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 110,
+    "file": "Rondo alla turca 421hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 421,
+    "date": "2026-05-15",
+    "note": "Kawai K300 ATX4 UPGRADE!!",
+    "type": "audio"
+  },
+  {
+    "id": 109,
+    "file": "Fantaisie Impromptu 396hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 396,
+    "date": "2026-04-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 108,
+    "file": "Sonata No. 16 396hrs.wav",
+    "piece": "sonata-16",
+    "hours": 396,
+    "date": "2026-04-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 107,
+    "file": "Rondo Alla Turca Ending Coda 393hrs.wav",
+    "piece": "rondo-alla-turca",
+    "hours": 393,
+    "date": "2026-03-15",
+    "note": "Ending Coda",
+    "type": "audio"
+  },
+  {
+    "id": 106,
+    "file": "Rondo Alla Turca Ending Coda 386hrs.wav",
+    "piece": "rondo-alla-turca",
+    "hours": 386,
+    "date": "2026-03-15",
+    "note": "Ending Coda",
+    "type": "audio"
+  },
+  {
+    "id": 105,
+    "file": "Passacaglia 385hrs.wav",
+    "piece": "passacaglia",
+    "hours": 385,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 104,
+    "file": "Sonata No. 16 385hrs.wav",
+    "piece": "sonata-16",
+    "hours": 385,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 103,
+    "file": "Sonata No. 16 382hrs.wav",
+    "piece": "sonata-16",
+    "hours": 382,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 102,
+    "file": "Fantaisie Impromptu 381hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 381,
+    "date": "2026-03-15",
+    "note": "section A fully memorized",
+    "type": "audio"
+  },
+  {
+    "id": 101,
+    "file": "Idea 25 378hrs.wav",
+    "piece": "idea-25",
+    "hours": 378,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 100,
+    "file": "The Tempest 378hrs.wav",
+    "piece": "tempest-3",
+    "hours": 378,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 99,
+    "file": "Rondo Alla Turca 374hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 374,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 98,
+    "file": "Moonlight Sonata I. 372hrs.wav",
+    "piece": "moonlight-1",
+    "hours": 372,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 97,
+    "file": "Fantaisie Impromptu 371hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 371,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 96,
+    "file": "Fur Elise 371hrs.m4a",
+    "piece": "fur-elise",
+    "hours": 371,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 95,
+    "file": "Gnossiene No1 371hrs.wav",
+    "piece": "gnossienne-1",
+    "hours": 371,
+    "date": "2026-03-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 94,
+    "file": "Fantaisie Impromptu 366hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 366,
+    "date": "2026-02-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 93,
+    "file": "Passacaglia 363hrs.wav",
+    "piece": "passacaglia",
+    "hours": 363,
+    "date": "2026-02-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 92,
+    "file": "The Tempest 362hrs.wav",
+    "piece": "tempest-3",
+    "hours": 362,
+    "date": "2026-02-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 91,
+    "file": "Clair de Lune 358hrs.wav",
+    "piece": "clair-de-lune",
+    "hours": 358,
+    "date": "2026-02-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 90,
+    "file": "Rondo Alla Turca 356hrs.wav",
+    "piece": "rondo-alla-turca",
+    "hours": 356,
+    "date": "2026-02-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 89,
+    "file": "Waltz in C Sharp Minor (Op.64 No.2) 352hrs.wav",
+    "piece": "waltz-64-2",
+    "hours": 352,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 88,
+    "file": "Fantaisie Impromptu 351hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 351,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 87,
+    "file": "Moonlight Sonata 3rd Movement 351hrs.wav",
+    "piece": "moonlight-3",
+    "hours": 351,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 86,
+    "file": "Waltz in C Sharp Minor (Op.64 No.2) 346hrs.wav",
+    "piece": "waltz-64-2",
+    "hours": 346,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 85,
+    "file": "Waltz in C Sharp Minor (Op.64 No.2) 345hrs.wav",
+    "piece": "waltz-64-2",
+    "hours": 345,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 84,
+    "file": "Fantaisie Impromptu 336hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 336,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 83,
+    "file": "La Campanella 334hrs.wav",
+    "piece": "la-campanella",
+    "hours": 334,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 82,
+    "file": "Fantaisie Impromptu 333hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 333,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 81,
+    "file": "Clair de Lune 333hrs.wav",
+    "piece": "clair-de-lune",
+    "hours": 333,
+    "date": "2026-01-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 80,
+    "file": "Fantaisie Impromptu 319hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 319,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 79,
+    "file": "Fantaisie Impromptu 315hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 315,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 78,
+    "file": "Gnossiene No1 314hrs.wav",
+    "piece": "gnossienne-1",
+    "hours": 314,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 77,
+    "file": "Idea 25 313hrs.wav",
+    "piece": "idea-25",
+    "hours": 313,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 76,
+    "file": "Fantaisie Impromptu 313hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 313,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 75,
+    "file": "Moonlight Sonata 3rd Movement 307hrs.wav",
+    "piece": "moonlight-3",
+    "hours": 307,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 74,
+    "file": "La Campanella 307hrs.wav",
+    "piece": "la-campanella",
+    "hours": 307,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 73,
+    "file": "Fantaisie Impromptu 307hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 307,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 72,
+    "file": "La Campanella 299hrs.wav",
+    "piece": "la-campanella",
+    "hours": 299,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 71,
+    "file": "Nocturne No. 20 (wow) 298hrs.wav",
+    "piece": "nocturne-20",
+    "hours": 298,
+    "date": "2025-12-15",
+    "note": "wow",
+    "type": "audio"
+  },
+  {
+    "id": 70,
+    "file": "Clair de Lune 298hrs.wav",
+    "piece": "clair-de-lune",
+    "hours": 298,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 69,
+    "file": "Nocturne No. 20 296hrs.wav",
+    "piece": "nocturne-20",
+    "hours": 296,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 68,
+    "file": "Rondo Alla Turca performance 294hrs.wav",
+    "piece": "rondo-alla-turca",
+    "hours": 294,
+    "date": "2025-12-15",
+    "note": "FULL PERFORMANCE",
+    "type": "audio"
+  },
+  {
+    "id": 67,
+    "file": "Fur Elise performance 293hrs.wav",
+    "piece": "fur-elise",
+    "hours": 293,
+    "date": "2025-12-15",
+    "note": "FULL PERFORMANCE",
+    "type": "audio"
+  },
+  {
+    "id": 66,
+    "file": "Nocturne No. 20 291hrs.wav",
+    "piece": "nocturne-20",
+    "hours": 291,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 65,
+    "file": "Nocturne No. 20 290hrs.wav",
+    "piece": "nocturne-20",
+    "hours": 290,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 64,
+    "file": "Fantaisie Impromptu 290hrs.wav",
+    "piece": "fantaisie-impromptu",
+    "hours": 290,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 63,
+    "file": "La Campanella 289hrs.wav",
+    "piece": "la-campanella",
+    "hours": 289,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 62,
+    "file": "Idea 25 289hrs.wav",
+    "piece": "idea-25",
+    "hours": 289,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 61,
+    "file": "Passacaglia 289hrs.m4a",
+    "piece": "passacaglia",
+    "hours": 289,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 60,
+    "file": "Fantaisie Impromptu 287hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 287,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 59,
+    "file": "Idea 25 286hrs.m4a",
+    "piece": "idea-25",
+    "hours": 286,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 58,
+    "file": "Moonlight Sonata 286hrs.m4a",
+    "piece": "moonlight-1",
+    "hours": 286,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 57,
+    "file": "Rondo Alla Turca 286hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 286,
+    "date": "2025-12-15",
+    "note": "SETUP UPGRADE!!!",
+    "type": "audio"
+  },
+  {
+    "id": 56,
+    "file": "La campanella 284hrs.m4a",
+    "piece": "la-campanella",
+    "hours": 284,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 55,
+    "file": "Fantaisie Impromptu 284hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 284,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 54,
+    "file": "Moonlight 3rd 282hrs.m4a",
+    "piece": "moonlight-3",
+    "hours": 282,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 53,
+    "file": "Fantaisie Impromptu 282hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 282,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 52,
+    "file": "Fantaisie Impromptu 281hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 281,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 51,
+    "file": "Fantaisie Impromptu 276hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 276,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 50,
+    "file": "Moonlight 3rd 276hrs.m4a",
+    "piece": "moonlight-3",
+    "hours": 276,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 49,
+    "file": "Fantaisie Impromptu 275hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 275,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 48,
+    "file": "Fantaisie Impromptu 273hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 273,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 47,
+    "file": "Moonlight 3rd 273hrs.m4a",
+    "piece": "moonlight-3",
+    "hours": 273,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 46,
+    "file": "Fantaisie Impromptu 272hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 272,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 45,
+    "file": "Fantaisie Impromptu 270hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 270,
+    "date": "2025-12-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 44,
+    "file": "Idea 25 268hrs.m4a",
+    "piece": "idea-25",
+    "hours": 268,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 43,
+    "file": "La Campanella 267hrs.m4a",
+    "piece": "la-campanella",
+    "hours": 267,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 42,
+    "file": "Moonlight 3rd 267hrs.m4a",
+    "piece": "moonlight-3",
+    "hours": 267,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 41,
+    "file": "La Campanella 265hrs.m4a",
+    "piece": "la-campanella",
+    "hours": 265,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 40,
+    "file": "Gnossienne (my interpretation) 263hrs.m4a",
+    "piece": "gnossienne-1",
+    "hours": 263,
+    "date": "2025-11-15",
+    "note": "my interpretation",
+    "type": "audio"
+  },
+  {
+    "id": 39,
+    "file": "Gnossienne 263hrs.m4a",
+    "piece": "gnossienne-1",
+    "hours": 263,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 38,
+    "file": "Moonlight sonata 3rd movement 263hrs.m4a",
+    "piece": "moonlight-3",
+    "hours": 263,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 37,
+    "file": "Idea 25 262hrs.m4a",
+    "piece": "idea-25",
+    "hours": 262,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 36,
+    "file": "Fur Elise complex 262hrs.m4a",
+    "piece": "fur-elise",
+    "hours": 262,
+    "date": "2025-11-15",
+    "note": "complex",
+    "type": "audio"
+  },
+  {
+    "id": 35,
+    "file": "Moonlight sonata 3rd movement 259hrs.m4a",
+    "piece": "moonlight-3",
+    "hours": 259,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 34,
+    "file": "idea_25_extended_257hrs.m4a",
+    "piece": "idea-25",
+    "hours": 257,
+    "date": "2025-11-15",
+    "note": "extended",
+    "type": "audio"
+  },
+  {
+    "id": 33,
+    "file": "idea_25_257hrs.m4a",
+    "piece": "idea-25",
+    "hours": 257,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 32,
+    "file": "idea_25_256hrs.m4a",
+    "piece": "idea-25",
+    "hours": 256,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 31,
+    "file": "fur_elise_complex_248hrs.m4a",
+    "piece": "fur-elise",
+    "hours": 248,
+    "date": "2025-11-15",
+    "note": "complex bit",
+    "type": "audio"
+  },
+  {
+    "id": 30,
+    "file": "une_comptine_248hrs.m4a",
+    "piece": "une-comptine",
+    "hours": 248,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 29,
+    "file": "turkish_march_248hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 248,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 28,
+    "file": "fur_elise_complex_246hrs.m4a",
+    "piece": "fur-elise",
+    "hours": 246,
+    "date": "2025-11-15",
+    "note": "complex bit",
+    "type": "audio"
+  },
+  {
+    "id": 27,
+    "file": "turkish_march_243hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 243,
+    "date": "2025-11-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 26,
+    "file": "la_campanella_241hrs_woah.m4a",
+    "piece": "la-campanella",
+    "hours": 241,
+    "date": "2025-11-15",
+    "note": "intro",
+    "type": "audio"
+  },
+  {
+    "id": 25,
+    "file": "turkish_march_238hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 238,
+    "date": "2025-10-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 24,
+    "file": "la_campanella_238hrs.m4a",
+    "piece": "la-campanella",
+    "hours": 238,
+    "date": "2025-10-15",
+    "note": "intro",
+    "type": "audio"
+  },
+  {
+    "id": 23,
+    "file": "gnossienne_237hrs.m4a",
+    "piece": "gnossienne-1",
+    "hours": 237,
+    "date": "2025-10-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 22,
+    "file": "gnossienne_235hrs.m4a",
+    "piece": "gnossienne-1",
+    "hours": 235,
+    "date": "2025-10-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 21,
+    "file": "gnossienne_234hrs.m4a",
+    "piece": "gnossienne-1",
+    "hours": 234,
+    "date": "2025-10-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 20,
+    "file": "la_campanella_233hrs.m4a",
+    "piece": "la-campanella",
+    "hours": 233,
+    "date": "2025-10-15",
+    "note": "intro",
+    "type": "audio"
+  },
+  {
+    "id": 19,
+    "file": "la_campanella_231.5hrs.m4a",
+    "piece": "la-campanella",
+    "hours": 231.5,
+    "date": "2025-10-15",
+    "note": "intro",
+    "type": "audio"
+  },
+  {
+    "id": 18,
+    "file": "la_campanella_231hrs.m4a",
+    "piece": "la-campanella",
+    "hours": 231,
+    "date": "2025-10-15",
+    "note": "intro",
+    "type": "audio"
+  },
+  {
+    "id": 17,
+    "file": "turkish_march_230hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 230,
+    "date": "2025-10-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 16,
+    "file": "turkish_march_207hrs.mp4",
+    "piece": "rondo-alla-turca",
+    "hours": 207,
+    "date": "2025-09-15",
+    "note": "",
+    "type": "video"
+  },
+  {
+    "id": 15,
+    "file": "turkish_march_205hrs.mp4",
+    "piece": "rondo-alla-turca",
+    "hours": 205,
+    "date": "2025-09-15",
+    "note": "",
+    "type": "video"
+  },
+  {
+    "id": 14,
+    "file": "turkish_march_200hrs.mp4",
+    "piece": "rondo-alla-turca",
+    "hours": 200,
+    "date": "2025-09-15",
+    "note": "",
+    "type": "video"
+  },
+  {
+    "id": 13,
+    "file": "the_line_200hrs.mp4",
+    "piece": "the-line",
+    "hours": 200,
+    "date": "2025-09-15",
+    "note": "",
+    "type": "video"
+  },
+  {
+    "id": 12,
+    "file": "passacaglia_200hrs.mp4",
+    "piece": "passacaglia",
+    "hours": 200,
+    "date": "2025-09-15",
+    "note": "",
+    "type": "video"
+  },
+  {
+    "id": 11,
+    "file": "fur_elise_200hrs.mp4",
+    "piece": "fur-elise",
+    "hours": 200,
+    "date": "2025-09-15",
+    "note": "",
+    "type": "video"
+  },
+  {
+    "id": 10,
+    "file": "canon_in_d_200hrs.mp4",
+    "piece": "canon-in-d",
+    "hours": 200,
+    "date": "2025-09-15",
+    "note": "",
+    "type": "video"
+  },
+  {
+    "id": 9,
+    "file": "fantasie_impromptu.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 180,
+    "date": "2025-07-15",
+    "note": "RH only",
+    "type": "audio"
+  },
+  {
+    "id": 8,
+    "file": "fur_elise_179hrs.m4a",
+    "piece": "fur-elise",
+    "hours": 179,
+    "date": "2025-07-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 7,
+    "file": "canon_in_d_178hrs.m4a",
+    "piece": "canon-in-d",
+    "hours": 178,
+    "date": "2025-07-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 6,
+    "file": "passacaglia_173hrs.m4a",
+    "piece": "passacaglia",
+    "hours": 173,
+    "date": "2025-07-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 5,
+    "file": "canon_in_d_172hrs.m4a",
+    "piece": "canon-in-d",
+    "hours": 172,
+    "date": "2025-07-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 4,
+    "file": "canon_in_d_168hrs.m4a",
+    "piece": "canon-in-d",
+    "hours": 168,
+    "date": "2025-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 3,
+    "file": "canon_in_d_166hrs.m4a",
+    "piece": "canon-in-d",
+    "hours": 166,
+    "date": "2025-06-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 2,
+    "file": "moonlight_sonata_155hrs.m4a",
+    "piece": "moonlight-1",
+    "hours": 155,
+    "date": "2025-05-15",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 1,
+    "file": "moonlight_sonata_154hrs.m4a",
+    "piece": "moonlight-1",
+    "hours": 154,
+    "date": "2025-05-15",
+    "note": "",
+    "type": "audio"
+  }
+]

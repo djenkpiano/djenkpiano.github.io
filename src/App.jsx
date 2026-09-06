@@ -1,771 +1,382 @@
-import React, { useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
+import snippets from './data/snippets.json'
+import { PIECES_BY_ID } from './data/pieces.mjs'
 
-const audiosByMonth = {
-  "August 2026": [
-    {
-      id: 128,
-      title: 'Raindrop Prelude 471hrs',
-      src: '/piano/Raindrop Prelude 471hrs.wav',
-    },
-    {
-      id: 127,
-      title: 'Tempest 3rd Mov 471hrs',
-      src: '/piano/Tempest 3rd Mov 471hrs.wav',
-    },
-    {
-      id: 126,
-      title: 'Rondo Alla Turca 471hrs',
-      src: '/piano/Rondo Alla Turca 471hrs.wav',
-    },
-    {
-      id: 125,
-      title: 'Fantaisie Impromptu 471hrs',
-      src: '/piano/Fantaisie Impromptu 471hrs.wav',
-    },
-  ],
-  "June 2026": [
-    {
-      id: 124,
-      title: 'Raindrop Prelude 450hrs',
-      src: '/piano/Raindrop 450hrs.wav',
-    },
-    {
-      id: 123,
-      title: 'Rondo Alla Turca 450hrs',
-      src: '/piano/Rondo Alla Turca 450hrs.wav',
-    },
-    {
-      id: 122,
-      title: 'Fantaisie Impromptu 450hrs',
-      src: '/piano/Fantaisie Impromptu 450hrs.wav',
-    },
-    {
-      id: 121,
-      title: 'Gnossienne No.1 450hrs',
-      src: '/piano/Gnossienne no1 450hrs.wav',
-    },
-    {
-      id: 120,
-      title: 'Moonlight Sonata 450hrs (NEW MP MIC SETUP)',
-      src: '/piano/Moonlight Sonata 450hrs.wav',
-    },
-    {
-      id: 119,
-      title: 'Raindrop Prelude 442hrs',
-      src: '/piano/Raindrop 442hrs.wav',
-    },
-    {
-      id: 118,
-      title: 'Fantaisie Impromptu 439hrs',
-      src: '/piano/Fantaisie Impromptu 439hrs.m4a',
-    },
-    {
-      id: 117,
-      title: 'Gnossienne No.1 439hrs',
-      src: '/piano/Gnossienne No1 439hrs.m4a',
-    },
-    {
-      id: 116,
-      title: 'Prelude in E minor 439hrs',
-      src: '/piano/Prelude in E minor 439hrs.m4a',
-    },
-    {
-      id: 115,
-      title: 'Raindrop Prelude (messy) 439hrs',
-      src: '/piano/Raindrop Prelude 439hrs.m4a',
-    },
-    {
-      id: 114,
-      title: 'Rondo Alla Turca 439hrs',
-      src: '/piano/Rondo Alla Turca 439hrs.m4a',
-    },
-  ],
-  "May 2026": [
-    {
-      id: 113,
-      title: 'Fantaisie Impromptu 421hrs',
-      src: '/piano/Fantaisie Impromptu 421hrs.m4a',
-    },
-    {
-      id: 112,
-      title: 'Clair Obscur: Alicia 421hrs',
-      src: '/piano/Clair Obscur Alicia 421hrs.m4a',
-    },
-    {
-      id: 111,
-      title: 'Passacaglia 421hrs',
-      src: '/piano/Passacaglia 421hrs.m4a',
-    },
-    {
-      id: 110,
-      title: 'Kawai K300 ATX4 UPGRADE!! Rondo Alla Turca 421hrs',
-      src: '/piano/Rondo alla turca 421hrs.m4a',
-    },
-  ],
-  "April 2026": [
-    {
-      id: 109,
-      title: 'Fantaisie Impromptu 396hrs',
-      src: '/piano/Fantaisie Impromptu 396hrs.wav',
-    },
-    {
-      id: 109,
-      title: 'Sonata No. 16 396hrs',
-      src: '/piano/Sonata No. 16 396hrs.wav',
-    },
-  ],
-  "March 2026": [
-    {
-      id: 107,
-      title: 'Rondo Alla Turca Ending Coda 393hrs',
-      src: '/piano/Rondo Alla Turca Ending Coda 393hrs.wav',
-    },
-    {
-      id: 106,
-      title: 'Rondo Alla Turca Ending Coda 386hrs',
-      src: '/piano/Rondo Alla Turca Ending Coda 386hrs.wav',
-    },
-    {
-      id: 105,
-      title: 'Passacaglia 385hrs',
-      src: '/piano/Passacaglia 385hrs.wav',
-    },
-    {
-      id: 104,
-      title: 'Sonata No. 16 "Sonata Facile" 385hrs',
-      src: '/piano/Sonata No. 16 385hrs.wav',
-    },
-    {
-      id: 103,
-      title: 'Sonata No. 16 "Sonata Facile" 382hrs',
-      src: '/piano/Sonata No. 16 382hrs.wav',
-    },
-    {
-      id: 102,
-      title: 'Fantaisie Impromptu (section A fully memorized) 381hrs',
-      src: '/piano/Fantaisie Impromptu 381hrs.wav',
-    },
-    {
-      id: 101,
-      title: 'Idea 25 378hrs',
-      src: '/piano/Idea 25 378hrs.wav',
-    },
-    {
-      id: 100,
-      title: 'The Tempest 378hrs',
-      src: '/piano/The Tempest 378hrs.wav',
-    },
-    {
-      id: 99,
-      title: 'Rondo Alla Turca 374hrs',
-      src: '/piano/Rondo Alla Turca 374hrs.m4a',
-    },
-    {
-      id: 98,
-      title: 'Moonlight Sonata I. 372hrs',
-      src: '/piano/Moonlight Sonata I. 372hrs.wav',
-    },
-    {
-      id: 97,
-      title: 'Fantaisie Impromptu 371hrs',
-      src: '/piano/Fantaisie Impromptu 371hrs.wav',
-    },
-    {
-      id: 96,
-      title: 'Fur Elise 371hrs',
-      src: '/piano/Fur Elise 371hrs.m4a',
-    },
-    {
-      id: 95,
-      title: 'Gnossienne No. 1 371hrs',
-      src: '/piano/Gnossiene No1 371hrs.wav',
-    },
-  ],
-  "February 2026": [
-    {
-      id: 94,
-      title: 'Fantaisie Impromptu 366hrs',
-      src: '/piano/Fantaisie Impromptu 366hrs.wav',
-    },
-    {
-      id: 93,
-      title: 'Passacaglia 363hrs',
-      src: '/piano/Passacaglia 363hrs.wav',
-    },
-    {
-      id: 92,
-      title: 'The Tempest 362hrs',
-      src: '/piano/The Tempest 362hrs.wav',
-    },
-    {
-      id: 91,
-      title: 'Clair de Lune 358hrs',
-      src: '/piano/Clair de Lune 358hrs.wav',
-    },
-    {
-      id: 90,
-      title: 'Rondo Alla Turca 356hrs',
-      src: '/piano/Rondo Alla Turca 356hrs.wav',
-    },
-  ],
-  "January 2026": [
-    {
-      id: 89,
-      title: 'Waltz in C Sharp Minor (Op.64 No.2) 352hrs',
-      src: '/piano/Waltz in C Sharp Minor (Op.64 No.2) 352hrs.wav',
-    },
-    {
-      id: 88,
-      title: 'Fantaisie Impromptu 351hrs',
-      src: '/piano/Fantaisie Impromptu 351hrs.wav',
-    },
-    {
-      id: 87,
-      title: 'Moonlight Sonata 3rd Movement 351hrs',
-      src: '/piano/Moonlight Sonata 3rd Movement 351hrs.wav',
-    },
-    {
-      id: 86,
-      title: 'Waltz in C Sharp Minor (Op.64 No.2) 346hrs',
-      src: '/piano/Waltz in C Sharp Minor (Op.64 No.2) 346hrs.wav',
-    },
-    {
-      id: 85,
-      title: 'Waltz in C Sharp Minor (Op.64 No.2) 345hrs',
-      src: '/piano/Waltz in C Sharp Minor (Op.64 No.2) 345hrs.wav',
-    },
-    {
-      id: 84,
-      title: 'Fantaisie Impromptu 336hrs',
-      src: '/piano/Fantaisie Impromptu 336hrs.m4a',
-    },
-    {
-      id: 83,
-      title: 'La Campanella 334hrs',
-      src: '/piano/La Campanella 334hrs.wav',
-    },
-    {
-      id: 82,
-      title: 'Fantaisie Impromptu 333hrs',
-      src: '/piano/Fantaisie Impromptu 333hrs.wav',
-    },
-    {
-      id: 81,
-      title: 'Clair de Lune 333hrs',
-      src: '/piano/Clair de Lune 333hrs.wav',
-    },
-  ],
-  "December 2025": [
-    {
-      id: 80,
-      title: 'Fantaisie Impromptu 319hrs',
-      src: '/piano/Fantaisie Impromptu 319hrs.m4a',
-    },
-    {
-      id: 79,
-      title: 'Fantaisie Impromptu 315hrs',
-      src: '/piano/Fantaisie Impromptu 315hrs.wav',
-    },
-    {
-      id: 78,
-      title: 'Gnossiene No. 1 314hrs',
-      src: '/piano/Gnossiene No1 314hrs.wav',
-    },
-    {
-      id: 77,
-      title: 'Idea 25 313hrs',
-      src: '/piano/Idea 25 313hrs.wav',
-    },
-    {
-      id: 76,
-      title: 'Fantaisie Impromptu 313hrs',
-      src: '/piano/Fantaisie Impromptu 313hrs.wav',
-    },
-    {
-      id: 75,
-      title: 'Moonlight Sonata 3rd Movement 307hrs',
-      src: '/piano/Moonlight Sonata 3rd Movement 307hrs.wav',
-    },
-    {
-      id: 74,
-      title: 'La Campanella 307hrs',
-      src: '/piano/La Campanella 307hrs.wav',
-    },
-    {
-      id: 73,
-      title: 'Fantaisie Impromptu 307hrs',
-      src: '/piano/Fantaisie Impromptu 307hrs.wav',
-    },
-    {
-      id: 72,
-      title: 'La Campanella 299hrs',
-      src: '/piano/La Campanella 299hrs.wav',
-    },
-    {
-      id: 71,
-      title: 'Nocturne No. 20 (wow) 298hrs',
-      src: '/piano/Nocturne No. 20 (wow) 298hrs.wav',
-    },
-    {
-      id: 70,
-      title: 'Clair de Lune 298hrs',
-      src: '/piano/Clair de Lune 298hrs.wav',
-    },
-    {
-      id: 69,
-      title: 'Nocturne No. 20 296hrs',
-      src: '/piano/Nocturne No. 20 296hrs.wav',
-    },
-    {
-      id: 68,
-      title: 'Rondo Alla Turca (FULL PERFORMANCE) 294hrs',
-      src: '/piano/Rondo Alla Turca performance 294hrs.wav',
-    },
-     {
-      id: 67,
-      title: 'Fur Elise (FULL PERFORMANCE) 293hrs',
-      src: '/piano/Fur Elise performance 293hrs.wav',
-    },
-    {
-      id: 66,
-      title: 'Nocturne No. 20 291hrs',
-      src: '/piano/Nocturne No. 20 291hrs.wav',
-    },
-    {
-      id: 65,
-      title: 'Nocturne No. 20 290hrs',
-      src: '/piano/Nocturne No. 20 290hrs.wav',
-    },
-    {
-      id: 64,
-      title: 'Fantaisie Impromptu 290hrs',
-      src: '/piano/Fantaisie Impromptu 290hrs.wav',
-    },
-    {
-      id: 63,
-      title: 'La Campanella 289hrs',
-      src: '/piano/La Campanella 289hrs.wav',
-    },
-    {
-      id: 62,
-      title: 'Idea 25 289hrs',
-      src: '/piano/Idea 25 289hrs.wav',
-    },
-    {
-      id: 61,
-      title: 'Passacaglia 289hrs',
-      src: '/piano/Passacaglia 289hrs.m4a',
-    },
-    {
-      id: 60,
-      title: 'Fantaisie Impromptu 287hrs',
-      src: '/piano/Fantaisie Impromptu 287hrs.m4a',
-    },
-    {
-      id: 59,
-      title: 'Idea 25 286hrs',
-      src: '/piano/Idea 25 286hrs.m4a',
-    },
-    {
-      id: 58,
-      title: 'Moonlight Sonata 286hrs',
-      src: '/piano/Moonlight Sonata 286hrs.m4a',
-    },
-    {
-      id: 57,
-      title: 'Rondo Alla Turca (SETUP UPGRADE!!!) 286hrs',
-      src: '/piano/Rondo Alla Turca 286hrs.m4a',
-    },
-    {
-      id: 56,
-      title: 'La Campanella 284hrs',
-      src: '/piano/La campanella 284hrs.m4a',
-    },
-    {
-      id: 55,
-      title: 'Fantaisie Impromptu 284hrs',
-      src: '/piano/Fantaisie Impromptu 284hrs.m4a',
-    },
-    {
-      id: 54,
-      title: 'Moonlight 3rd 282hrs',
-      src: '/piano/Moonlight 3rd 282hrs.m4a',
-    },
-    {
-      id: 53,
-      title: 'Fantaisie Impromptu 282hrs',
-      src: '/piano/Fantaisie Impromptu 282hrs.m4a',
-    },
-    {
-      id: 52,
-      title: 'Fantaisie Impromptu 281hrs',
-      src: '/piano/Fantaisie Impromptu 281hrs.m4a',
-    },
-    {
-      id: 51,
-      title: 'Fantaisie Impromptu 276hrs',
-      src: '/piano/Fantaisie Impromptu 276hrs.m4a',
-    },
-    {
-      id: 50,
-      title: 'Moonlight 3rd 276hrs',
-      src: '/piano/Moonlight 3rd 276hrs.m4a',
-    },
-    {
-      id: 49,
-      title: 'Fantaisie Impromptu 275hrs',
-      src: '/piano/Fantaisie Impromptu 275hrs.m4a',
-    },
-    {
-      id: 48,
-      title: 'Fantaisie Impromptu 273hrs',
-      src: '/piano/Fantaisie Impromptu 273hrs.m4a',
-    },
-    {
-      id: 47,
-      title: 'Moonlight 3rd 273hrs',
-      src: '/piano/Moonlight 3rd 273hrs.m4a',
-    },
-    {
-      id: 46,
-      title: 'Fantaisie Impromptu 272hrs',
-      src: '/piano/Fantaisie Impromptu 272hrs.m4a',
-    },
-    {
-      id: 45,
-      title: 'Fantaisie Impromptu 270hrs',
-      src: '/piano/Fantaisie Impromptu 270hrs.m4a',
-    },
-  ],
-  "November 2025": [
-    {
-      id: 44,
-      title: 'Idea 25 268hrs',
-      src: '/piano/Idea 25 268hrs.m4a',
-    },
-    {
-      id: 43,
-      title: 'La Campanella - 267h',
-      src: '/piano/La Campanella 267hrs.m4a',
-    },
-    {
-      id: 42,
-      title: 'Moonlight Sonata 3rd movement - 267h',
-      src: '/piano/Moonlight 3rd 267hrs.m4a',
-    },
-    {
-      id: 41,
-      title: 'La Campanella - 265h',
-      src: '/piano/La Campanella 265hrs.m4a',
-    },
-    {
-      id: 40,
-      title: 'Gnossienne (my interpretation) - 263h',
-      src: '/piano/Gnossienne (my interpretation) 263hrs.m4a',
-    },
-    {
-      id: 39,
-      title: 'Gnossienne - 263h',
-      src: '/piano/Gnossienne 263hrs.m4a',
-    },
-    {
-      id: 38,
-      title: 'Moonlight Sonata 3rd Movement - 263h',
-      src: '/piano/Moonlight sonata 3rd movement 263hrs.m4a',
-    },
-    {
-      id: 37,
-      title: 'Idea 25 - 262h',
-      src: '/piano/Idea 25 262hrs.m4a',
-    },
-    {
-      id: 36,
-      title: 'Fur Elise complex - 262h',
-      src: '/piano/Fur Elise complex 262hrs.m4a',
-    },
-    {
-      id: 35,
-      title: 'Moonlight Sonata 3rd Movement - 259h',
-      src: '/piano/Moonlight sonata 3rd movement 259hrs.m4a',
-    },
-    {
-      id: 34,
-      title: 'Idea 25 (extended) - 257h',
-      src: '/piano/idea_25_extended_257hrs.m4a',
-    },
-    {
-      id: 33,
-      title: 'Idea 25 - 257h',
-      src: '/piano/idea_25_257hrs.m4a',
-    },
-    {
-      id: 32,
-      title: 'Idea 25 - 256h',
-      src: '/piano/idea_25_256hrs.m4a',
-    },
-    {
-      id: 31,
-      title: 'Fur Elise complex bit - 248h',
-      src: '/piano/fur_elise_complex_248hrs.m4a',
-    },
-    {
-      id: 30,
-      title: "D'une comptine d'un autre été - 248h",
-      src: "/piano/une_comptine_248hrs.m4a",
-    },
-    {
-      id: 29,
-      title: 'Rondo Alla Turca (Turkish March) - 248h',
-      src: '/piano/turkish_march_248hrs.m4a',
-    },
-    {
-      id: 28,
-      title: 'Fur Elise complex bit - 246h',
-      src: '/piano/fur_elise_complex_246hrs.m4a',
-    },
-    {
-      id: 27,
-      title: 'Rondo Alla Turca (Turkish March) - 243h',
-      src: '/piano/turkish_march_243hrs.m4a',
-    },
-    {
-      id: 26,
-      title: 'La Campanella intro - 241h',
-      src: '/piano/la_campanella_241hrs_woah.m4a',
-    },
-  ],
-  "October 2025": [
-    {
-      id: 25,
-      title: 'Rondo Alla Turca (Turkish March) - 238h',
-      src: '/piano/turkish_march_238hrs.m4a',
-    },
-    {
-      id: 24,
-      title: 'La Campanella intro - 238h',
-      src: '/piano/la_campanella_238hrs.m4a',
-    },
-    {
-      id: 23,
-      title: 'Gnossienne - 237h',
-      src: '/piano/gnossienne_237hrs.m4a',
-    },
-    {
-      id: 22,
-      title: 'Gnossienne - 235h',
-      src: '/piano/gnossienne_235hrs.m4a',
-    },
-    {
-      id: 21,
-      title: 'Gnossienne - 234h',
-      src: '/piano/gnossienne_234hrs.m4a',
-    },
-    {
-      id: 20,
-      title: 'La Campanella intro - 233h',
-      src: '/piano/la_campanella_233hrs.m4a',
-    },
-    {
-      id: 19,
-      title: 'La Campanella intro - 231h',
-      src: '/piano/la_campanella_231.5hrs.m4a',
-    },
-    {
-      id: 18,
-      title: 'La Campanella intro - 231h',
-      src: '/piano/la_campanella_231hrs.m4a',
-    },
-    {
-      id: 17,
-      title: 'Rondo Alla Turca (Turkish March) - 230h',
-      src: '/piano/turkish_march_230hrs.m4a',
-    },
-  ],
-  "September 2025": [
-    {
-      id: 16,
-      title: 'Rondo Alla Turca (Turkish March) - 207h',
-      src: '/piano/turkish_march_207hrs.mp4',
-      type: 'video',
-    },
-    {
-      id: 15,
-      title: 'Rondo Alla Turca (Turkish March) - 205h',
-      src: '/piano/turkish_march_205hrs.mp4',
-      type: 'video',
-    },
-    {
-      id: 14,
-      title: 'Rondo Alla Turca (Turkish March) - 200h',
-      src: '/piano/turkish_march_200hrs.mp4',
-      type: 'video',
-    },
-    {
-      id: 13,
-      title: 'The Line (Arcane) - 200h',
-      src: '/piano/the_line_200hrs.mp4',
-      type: 'video',
-    },
-    {
-      id: 12,
-      title: 'Passacaglia - 200h',
-      src: '/piano/passacaglia_200hrs.mp4',
-      type: 'video',
-    },
-    {
-      id: 11,
-      title: 'Fur Elise - 200h',
-      src: '/piano/fur_elise_200hrs.mp4',
-      type: 'video',
-    },
-    {
-      id: 10,
-      title: 'Canon in D - 200h',
-      src: '/piano/canon_in_d_200hrs.mp4',
-      type: 'video',
-    },
-  ],
-  "July 2025": [
-    {
-      id: 9,
-      title: 'Fantaisie Impromptu (RH only)- 180h',
-      src: '/piano/fantasie_impromptu.m4a',
-    },
-    {
-      id: 8,
-      title: 'Fur Elise - 179h',
-      src: '/piano/fur_elise_179hrs.m4a',
-    },
-    {
-      id: 7,
-      title: 'Canon in D - 178h',
-      src: '/piano/canon_in_d_178hrs.m4a',
-    },
-    {
-      id: 6,
-      title: 'Passacaglia - 173h',
-      src: '/piano/passacaglia_173hrs.m4a',
-    },
-    {
-      id: 5,
-      title: 'Canon in D - 172h',
-      src: '/piano/canon_in_d_172hrs.m4a',
-    },
-  ],
-  "June 2025": [
-    {
-      id: 4,
-      title: 'Canon in D - 168h',
-      src: '/piano/canon_in_d_168hrs.m4a',
-    },
-    {
-      id: 3,
-      title: 'Canon in D - 166h',
-      src: '/piano/canon_in_d_166hrs.m4a',
-    },
-  ],
-  "May 2025": [
-    {
-      id: 2,
-      title: 'Moonlight Sonata - 155h',
-      src: '/piano/moonlight_sonata_155hrs.m4a',
-    },
-    {
-      id: 1,
-      title: 'Moonlight Sonata - 154h',
-      src: '/piano/moonlight_sonata_154hrs.m4a',
-    },
-  ],
+/* The whole page is driven by src/data/snippets.json, which `npm run snippets`
+   regenerates from the files in public/piano. Nothing here needs touching when
+   a new recording is added. */
+
+const BUILD_TIME = typeof __BUILD_TIME__ === 'string' ? __BUILD_TIME__ : null
+
+const MONTH_FMT = new Intl.DateTimeFormat('en-GB', {
+  month: 'long',
+  year: 'numeric',
+  timeZone: 'UTC',
+})
+
+const monthLabel = (iso) => MONTH_FMT.format(new Date(`${iso}T00:00:00Z`))
+const fmtHours = (h) => (h == null ? null : `${Math.floor(h)} hrs`)
+
+/** snippets.json + the piece catalog, joined once at module load. */
+const ALL = snippets.map((s) => {
+  // A file whose name isn't in the catalog still gets listed — with whatever the
+  // generator could read off the name — rather than silently disappearing.
+  const matched = PIECES_BY_ID[s.piece]
+  const piece = matched ?? {
+    id: 'unmatched',
+    title: s.note || s.file.replace(/\.[^.]+$/, ''),
+    composer: 'Unmatched',
+    era: null,
+  }
+  return {
+    ...s,
+    note: matched ? s.note : '',
+    piece,
+    src: encodeURI(`/piano/${s.file}`),
+    month: monthLabel(s.date),
+    search: [piece.title, piece.subtitle, piece.composer, piece.era, ...(piece.tags ?? []), s.note, s.file]
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase(),
+  }
+})
+
+/** Facet -> how many recordings carry it, biggest first. */
+function tally(values) {
+  const counts = new Map()
+  for (const v of values) if (v) counts.set(v, (counts.get(v) ?? 0) + 1)
+  return [...counts.entries()]
+    .map(([name, count]) => ({ name, count }))
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name))
+}
+
+const COMPOSERS = tally(ALL.map((s) => s.piece.composer))
+const PIECE_OPTIONS = [
+  ...ALL.reduce((map, s) => {
+    const row = map.get(s.piece.id) ?? { ...s.piece, count: 0 }
+    row.count += 1
+    return map.set(s.piece.id, row)
+  }, new Map()).values(),
+].sort((a, b) => a.title.localeCompare(b.title))
+
+const PEAK_HOURS = Math.floor(Math.max(...ALL.map((s) => s.hours ?? 0)))
+
+const SORTS = [
+  { value: 'new', label: 'Newest first' },
+  { value: 'old', label: 'Oldest first' },
+  { value: 'piece', label: 'Group by piece' },
+]
+
+const toggle = (list, value) =>
+  list.includes(value) ? list.filter((v) => v !== value) : [...list, value]
+
+function SearchIcon() {
+  return (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.6-3.6" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+function Caret() {
+  return (
+    <svg className="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.6">
+      <path d="m6 9 6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
 }
 
 export default function App() {
-  const [openMonths, setOpenMonths] = useState({ November: true })
-  const buildTime = import.meta.env.VITE_BUILD_TIME;
+  const [query, setQuery] = useState('')
+  const [composers, setComposers] = useState([])
+  const [eras, setEras] = useState([])
+  const [pieceId, setPieceId] = useState('')
+  const [sort, setSort] = useState('new')
+  const [open, setOpen] = useState({})
+
+  const filtering = Boolean(query.trim() || composers.length || eras.length || pieceId)
+
+  const results = useMemo(() => {
+    const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean)
+    return ALL.filter(
+      (s) =>
+        (!composers.length || composers.includes(s.piece.composer)) &&
+        (!eras.length || eras.includes(s.piece.era)) &&
+        (!pieceId || s.piece.id === pieceId) &&
+        terms.every((t) => s.search.includes(t)),
+    )
+  }, [query, composers, eras, pieceId])
+
+  const groups = useMemo(() => {
+    // ALL is already newest-first, so 'new' needs no sorting at all.
+    const list = [...results]
+    if (sort === 'old') list.reverse()
+    if (sort === 'piece') {
+      list.sort(
+        (a, b) =>
+          a.piece.title.localeCompare(b.piece.title) ||
+          (b.hours ?? -1) - (a.hours ?? -1) ||
+          b.id - a.id,
+      )
+    }
+    const map = new Map()
+    for (const s of list) {
+      const key = sort === 'piece' ? s.piece.title : s.month
+      if (!map.has(key)) map.set(key, [])
+      map.get(key).push(s)
+    }
+    return [...map.entries()].map(([label, items]) => ({ label, items }))
+  }, [results, sort])
+
+  // Collapse state is per-view: changing a filter or the sort resets it, so the
+  // defaults below (everything open while filtering, newest month open at rest)
+  // always apply to what you are actually looking at.
+  const viewKey = JSON.stringify([query, composers, eras, pieceId, sort])
+  useEffect(() => setOpen({}), [viewKey])
+
+  const isOpen = (label, index) => open[label] ?? (filtering || index === 0)
+  const setAllOpen = (value) =>
+    setOpen(Object.fromEntries(groups.map((g) => [g.label, value])))
+
+  const clearAll = () => {
+    setQuery('')
+    setComposers([])
+    setEras([])
+    setPieceId('')
+  }
+
+  const activePiece = PIECE_OPTIONS.find((p) => p.id === pieceId)
 
   return (
     <div className="app">
-      <header>
+      <header className="hero">
         <h1>Piano Progress</h1>
+        <p className="lede">
+          Welcome to my portfolio and progress archive — take a look around 🙂 Every recording is
+          labelled with the total hours I had practised at the time, so you can hear things
+          change.
+        </p>
+        <p className="dream">
+          <span className="label">Dream pieces:</span> Ballade No. 1 in G minor · Liebesleid ·
+          Raindrop Prelude · The Tempest · Fantaisie-Impromptu · La Campanella
+        </p>
+
+        <ul className="stats">
+          <li>
+            <span className="n">{PEAK_HOURS.toLocaleString('en-GB')}</span>
+            <span className="k">hours practised</span>
+          </li>
+          <li>
+            <span className="n">{ALL.length}</span>
+            <span className="k">recordings</span>
+          </li>
+          <li>
+            <span className="n">{PIECE_OPTIONS.length}</span>
+            <span className="k">pieces</span>
+          </li>
+          <li>
+            <span className="n">{COMPOSERS.length}</span>
+            <span className="k">composers</span>
+          </li>
+        </ul>
+
+        {BUILD_TIME && (
+          <p className="updated">
+            Last updated {new Date(BUILD_TIME).toLocaleString('en-GB', { dateStyle: 'long', timeStyle: 'short' })}
+          </p>
+        )}
       </header>
 
-      <main>
-        <p>Welcome to my portfolio and progress archive, take a look around! 🙂<br></br>
-          Dream pieces: Raindrop Prelude, The Tempest, Fantaisie Impromptu, La Campanella
-        </p>
-        <p style={{ opacity: 0.7 }}>
-          Last updated: {new Date(buildTime).toLocaleString('en-GB')}
-        </p>
-        <section>
-          <h2>Recordings</h2>
-          {Object.keys(audiosByMonth).length === 0 ? (
-            <p>No months with recordings yet. Add some audio files.</p>
-          ) : (
-            <div>
-              {Object.entries(audiosByMonth).map(([month, snippets]) => (
-                <div key={month} style={{ marginBottom: 24 }}>
-                  <button
-                    onClick={() =>
-                      setOpenMonths((prev) => ({
-                        ...prev,
-                        [month]: !prev[month],
-                      }))
-                    }
-                    style={{
-                      background: 'none',
-                      border: 'none',
-                      cursor: 'pointer',
-                      fontSize: 18,
-                      fontWeight: 600,
-                      color: 'var(--text)',
-                      padding: 0,
-                      textAlign: 'left',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: 8,
-                    }}
-                  >
-                    <span
-                      style={{
-                        display: 'inline-block',
-                        transition: 'transform 0.2s',
-                        transform: openMonths[month] ? 'rotate(0deg)' : 'rotate(-90deg)',
-                      }}
-                    >
-                      ▼
-                    </span>
-                    {month}
-                  </button>
+      <div className="toolbar">
+        <div className="controls">
+          <div className="search-wrap">
+            <SearchIcon />
+            <input
+              className="search"
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Search piece, composer, tag…"
+              aria-label="Search recordings"
+            />
+            {query && (
+              <button className="search-clear" onClick={() => setQuery('')} aria-label="Clear search">
+                ✕
+              </button>
+            )}
+          </div>
 
-                  {openMonths[month] && (
-                    <ul style={{ marginTop: 12, paddingLeft: 24 }}>
-                      {snippets.map((a) => (
-                        <li key={a.id} style={{ marginBottom: 16, listStyle: 'none' }}>
-                          <div style={{ fontWeight: 500, marginBottom: 8 }}>{a.title}</div>
-                          {a.type === 'video' ? (
-                            <video
-                              controls
-                              preload="metadata"
-                              src={encodeURI(a.src)}
-                              style={{ width: '100%', maxWidth: 500, backgroundColor: '#000' }}
-                            />
-                          ) : (
-                            <audio
-                              controls
-                              preload="metadata"
-                              src={encodeURI(a.src)}
-                              style={{ width: '100%' }}
-                            />
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ))}
-            </div>
+          <select
+            className="select"
+            value={pieceId}
+            onChange={(e) => setPieceId(e.target.value)}
+            aria-label="Filter by piece"
+          >
+            <option value="">All pieces</option>
+            {PIECE_OPTIONS.map((p) => (
+              <option key={p.id} value={p.id}>
+                {p.title} ({p.count})
+              </option>
+            ))}
+          </select>
+
+          <select
+            className="select"
+            value={sort}
+            onChange={(e) => setSort(e.target.value)}
+            aria-label="Sort recordings"
+          >
+            {SORTS.map((s) => (
+              <option key={s.value} value={s.value}>
+                {s.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div className="chips" role="group" aria-label="Filter by composer">
+          {COMPOSERS.map((c) => (
+            <button
+              key={c.name}
+              className="chip"
+              aria-pressed={composers.includes(c.name)}
+              onClick={() => setComposers((prev) => toggle(prev, c.name))}
+            >
+              {c.name}
+              <span className="count">{c.count}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <main>
+        <div className="resultbar">
+          <span>
+            {results.length} {results.length === 1 ? 'recording' : 'recordings'}
+          </span>
+
+          {composers.map((name) => (
+            <button key={name} className="pill" onClick={() => setComposers((p) => toggle(p, name))}>
+              {name} <span className="x">✕</span>
+            </button>
+          ))}
+          {eras.map((era) => (
+            <button key={era} className="pill" onClick={() => setEras((p) => toggle(p, era))}>
+              {era} <span className="x">✕</span>
+            </button>
+          ))}
+          {activePiece && (
+            <button className="pill" onClick={() => setPieceId('')}>
+              {activePiece.title} <span className="x">✕</span>
+            </button>
           )}
-        </section>
+          {filtering && (
+            <button className="linkbtn" onClick={clearAll}>
+              Clear all
+            </button>
+          )}
+
+          <span className="spacer" />
+
+          {groups.length > 1 && (
+            <>
+              <button className="linkbtn" onClick={() => setAllOpen(true)}>
+                Expand all
+              </button>
+              <button className="linkbtn" onClick={() => setAllOpen(false)}>
+                Collapse all
+              </button>
+            </>
+          )}
+        </div>
+
+        {groups.length === 0 ? (
+          <div className="empty">
+            <p>Nothing matches that.</p>
+            <button className="linkbtn" onClick={clearAll}>
+              Clear all filters
+            </button>
+          </div>
+        ) : (
+          groups.map((group, index) => {
+            const expanded = isOpen(group.label, index)
+            return (
+              <section className="group" key={group.label}>
+                <button
+                  className="group-head"
+                  aria-expanded={expanded}
+                  onClick={() => setOpen((prev) => ({ ...prev, [group.label]: !expanded }))}
+                >
+                  <Caret />
+                  {group.label}
+                  <span className="rule" />
+                  <span className="n">{group.items.length}</span>
+                </button>
+
+                {expanded && (
+                  <div className="grid">
+                    {group.items.map((s) => (
+                      <Card
+                        key={s.id}
+                        snippet={s}
+                        onPiece={() => setPieceId(s.piece.id)}
+                        onComposer={() => setComposers((p) => toggle(p, s.piece.composer))}
+                        onEra={() => setEras((p) => toggle(p, s.piece.era))}
+                      />
+                    ))}
+                  </div>
+                )}
+              </section>
+            )
+          })
+        )}
       </main>
+
+      <footer className="foot">
+        Recorded at home on a Kawai K300 ATX4. Feel free to copy anything from this site.
+      </footer>
     </div>
+  )
+}
+
+function Card({ snippet, onPiece, onComposer, onEra }) {
+  const { piece, note, hours, type, src } = snippet
+  const Player = type === 'video' ? 'video' : 'audio'
+
+  return (
+    <article className="card">
+      <button className="card-title" onClick={onPiece} title={`Show only ${piece.title}`}>
+        {piece.title}
+      </button>
+
+      {(piece.subtitle || note) && (
+        <div className="card-sub">
+          {piece.subtitle}
+          {piece.subtitle && note && ' · '}
+          {note && <em>{note}</em>}
+        </div>
+      )}
+
+      <div className="meta">
+        <button className="tag" onClick={onComposer}>
+          {piece.composer}
+        </button>
+        {piece.era && (
+          <button className="tag quiet" onClick={onEra}>
+            {piece.era}
+          </button>
+        )}
+        {(piece.tags ?? []).map((tag) => (
+          <span key={tag} className="tag quiet static">
+            {tag}
+          </span>
+        ))}
+        {hours != null && <span className="hours">{fmtHours(hours)}</span>}
+      </div>
+
+      {/* preload="none" keeps 128 players off the network until one is played */}
+      <Player className="player" controls preload="none" src={src} />
+    </article>
   )
 }

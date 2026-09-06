@@ -4,11 +4,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "powershell -Command \"Set-Content .env \\\"VITE_BUILD_TIME=$(Get-Date -Format o)\\\"\"; vite build",
-    "deploy": "npm run build && gh-pages -d dist",
+    "snippets": "node scripts/build-snippets.mjs",
+    "dev": "npm run snippets && vite",
+    "build": "npm run snippets && vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
