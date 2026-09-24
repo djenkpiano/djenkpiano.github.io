@@ -1,5 +1,68 @@
 [
   {
+    "id": 141,
+    "file": "Clair de Lune 519hrs.m4a",
+    "piece": "clair-de-lune",
+    "hours": 519,
+    "date": "2026-09-24",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 140,
+    "file": "Sonata Facile 519hrs.m4a",
+    "piece": "sonata-16",
+    "hours": 519,
+    "date": "2026-09-24",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 139,
+    "file": "Rondo Alla Turca 519hrs.m4a",
+    "piece": "rondo-alla-turca",
+    "hours": 519,
+    "date": "2026-09-24",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 137,
+    "file": "Moonlight I 519hrs.m4a",
+    "piece": "moonlight-1",
+    "hours": 519,
+    "date": "2026-09-24",
+    "note": "Moonlight I",
+    "type": "audio"
+  },
+  {
+    "id": 135,
+    "file": "Fantaisie Impromptu 519hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 519,
+    "date": "2026-09-24",
+    "note": "",
+    "type": "audio"
+  },
+  {
+    "id": 138,
+    "file": "Moonlight III 518hrs.m4a",
+    "piece": "moonlight-3",
+    "hours": 518,
+    "date": "2026-09-24",
+    "note": "Moonlight III",
+    "type": "audio"
+  },
+  {
+    "id": 136,
+    "file": "Gnossienne No. 1 518hrs.m4a",
+    "piece": "gnossienne-1",
+    "hours": 518,
+    "date": "2026-09-24",
+    "note": "",
+    "type": "audio"
+  },
+  {
     "id": 133,
     "file": "Lalaland 482hrs.wav",
     "piece": "mia-and-sebastian",

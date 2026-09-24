@@ -89,7 +89,7 @@ export const PIECES = [
     subtitle: 'Op. 27 No. 2',
     composer: 'Beethoven',
     era: 'Classical',
-    aliases: ['moonlight sonata i', 'moonlight sonata 1st', 'moonlight sonata'],
+    aliases: ['moonlight sonata i', 'moonlight sonata 1st', 'moonlight sonata', 'moonlight i'],
   },
   {
     id: 'moonlight-3',
@@ -97,7 +97,7 @@ export const PIECES = [
     subtitle: 'Op. 27 No. 2',
     composer: 'Beethoven',
     era: 'Classical',
-    aliases: ['moonlight sonata 3rd movement', 'moonlight 3rd', 'moonlight sonata iii'],
+    aliases: ['moonlight sonata 3rd movement', 'moonlight 3rd', 'moonlight sonata iii', 'moonlight iii'],
   },
   {
     id: 'tempest-3',
@@ -141,15 +141,6 @@ export const PIECES = [
     subtitle: 'S. 141 No. 3',
     composer: 'Liszt',
     era: 'Romantic',
-  },
-
-  // --- Rachmaninoff ---------------------------------------------------------
-  {
-    id: 'liebesleid',
-    title: 'Liebesleid',
-    composer: 'Rachmaninoff',
-    era: 'Romantic',
-    aliases: ['liebesleid', 'liebeslied'],
   },
 
   // --- Rachmaninoff ---------------------------------------------------------
