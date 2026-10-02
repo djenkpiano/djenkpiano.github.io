@@ -1,5 +1,23 @@
 [
   {
+    "id": 142,
+    "file": "Ballade in G Minor 526hrs.m4a",
+    "piece": "ballade-1",
+    "hours": 526,
+    "date": "2026-10-02",
+    "note": "in G Minor",
+    "type": "audio"
+  },
+  {
+    "id": 143,
+    "file": "Nocturne No 20 525hrs.m4a",
+    "piece": "nocturne-20",
+    "hours": 525,
+    "date": "2026-10-02",
+    "note": "",
+    "type": "audio"
+  },
+  {
     "id": 141,
     "file": "Clair de Lune 519hrs.m4a",
     "piece": "clair-de-lune",
