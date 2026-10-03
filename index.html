@@ -11,6 +11,30 @@
       content="A piano practice archive: recordings of Chopin, Beethoven, Liszt, Mozart and more, each labelled with the hours practised at the time."
     />
     <title>Piano Progress</title>
+
+    <script>
+      // Keep your own visits out of the stats: open the site once with ?me on
+      // each of your devices (undo with ?notme). Umami skips every browser that
+      // has `umami.disabled` set. The flag is stripped from the URL afterwards.
+      try {
+        var q = new URLSearchParams(location.search)
+        if (q.has('me')) localStorage.setItem('umami.disabled', '1')
+        if (q.has('notme')) localStorage.removeItem('umami.disabled')
+        if (q.has('me') || q.has('notme')) {
+          q.delete('me')
+          q.delete('notme')
+          var rest = q.toString()
+          history.replaceState(null, '', location.pathname + (rest ? '?' + rest : '') + location.hash)
+        }
+      } catch (e) {}
+    </script>
+    <!-- Cookieless analytics (umami.is). data-domains keeps localhost/dev out. -->
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="d3038a45-5cbe-4587-8b15-2635387dc44f"
+      data-domains="djenkpiano.me,www.djenkpiano.me"
+    ></script>
   </head>
   <body>
     <div id="root"></div>

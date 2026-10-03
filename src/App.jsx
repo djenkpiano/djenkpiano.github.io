@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import snippets from './data/snippets.json'
 import { PIECES_BY_ID } from './data/pieces.mjs'
 
@@ -15,6 +15,24 @@ const MONTH_FMT = new Intl.DateTimeFormat('en-GB', {
 })
 
 const monthLabel = (iso) => MONTH_FMT.format(new Date(`${iso}T00:00:00Z`))
+
+/** Umami custom event. No-op on localhost, with ad blockers, or for ?me browsers. */
+const track = (name, data) => {
+  try {
+    window.umami?.track(name, data)
+  } catch {
+    /* analytics must never break playback */
+  }
+}
+
+/** Set by visiting the site with ?me (see index.html). */
+const ANALYTICS_OFF = (() => {
+  try {
+    return Boolean(localStorage.getItem('umami.disabled'))
+  } catch {
+    return false
+  }
+})()
 const fmtHours = (h) => (h == null ? null : `${Math.floor(h)} hrs`)
 
 /** snippets.json + the piece catalog, joined once at module load. */
@@ -334,15 +352,26 @@ export default function App() {
       </main>
 
       <footer className="foot">
-        Recorded at home on a Kawai K300 ATX4. Feel free to copy anything from this site.
+        Recorded at home on a Kawai K300 ATX4. Feel free to copy anything from this site. This
+        site uses privacy-friendly, cookieless analytics.
+        {ANALYTICS_OFF && ' Analytics are off in this browser.'}
       </footer>
     </div>
   )
 }
 
 function Card({ snippet, onPiece, onComposer, onEra }) {
-  const { piece, note, hours, type, src } = snippet
+  const { piece, note, hours, type, src, file } = snippet
   const Player = type === 'video' ? 'video' : 'audio'
+  const played = useRef(false)
+  const event = { piece: piece.title, composer: piece.composer, hours, file }
+
+  // One "Play" per recording per visit, so pause/resume doesn't inflate it.
+  const onPlay = () => {
+    if (played.current) return
+    played.current = true
+    track('Play', event)
+  }
 
   return (
     <article className="card">
@@ -376,7 +405,14 @@ function Card({ snippet, onPiece, onComposer, onEra }) {
       </div>
 
       {/* preload="none" keeps 128 players off the network until one is played */}
-      <Player className="player" controls preload="none" src={src} />
+      <Player
+        className="player"
+        controls
+        preload="none"
+        src={src}
+        onPlay={onPlay}
+        onEnded={() => track('Listened to the end', event)}
+      />
     </article>
   )
 }
