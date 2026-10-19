@@ -85,15 +85,3 @@ node scripts/build-snippets.mjs --check     # fail if the manifest is out of dat
 ```
 
 This project uses Vite. If you prefer `yarn` or `pnpm`, use the equivalent commands.
-
-## Analytics
-
-Visits and plays are tracked with [Umami](https://umami.is) (cookieless). The
-tracker is relayed through a Cloudflare Worker,
-`https://djenkpiano.djenk-ivanov.workers.dev`, so ad blockers don't drop it.
-Its code is in [`worker/index.js`](worker/index.js). To change it, edit that
-file and paste it into the Worker in the Cloudflare dashboard
-(Workers & Pages → `djenkpiano` → Edit code → Deploy).
-
-Open `https://djenkpiano.me/?me` once in each of your own browsers to exclude
-yourself; `?notme` undoes it.
