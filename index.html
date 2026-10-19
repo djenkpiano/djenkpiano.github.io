@@ -28,11 +28,14 @@
         }
       } catch (e) {}
     </script>
-    <!-- Cookieless analytics (umami.is). data-domains keeps localhost/dev out. -->
+    <!-- Cookieless analytics (umami.is), relayed through our own Cloudflare
+         Worker (worker/index.js) so ad blockers don't drop the visit.
+         data-domains keeps localhost/dev out. -->
     <script
       defer
-      src="https://cloud.umami.is/script.js"
+      src="https://djenkpiano.djenk-ivanov.workers.dev/p.js"
       data-website-id="d3038a45-5cbe-4587-8b15-2635387dc44f"
+      data-host-url="https://djenkpiano.djenk-ivanov.workers.dev"
       data-domains="djenkpiano.me,www.djenkpiano.me"
     ></script>
   </head>

@@ -1,0 +1,6 @@
+# Cloudflare Worker that relays Umami analytics past ad blockers.
+# Deploy from this folder:  npx wrangler deploy
+name = "djenkpiano"
+main = "index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
