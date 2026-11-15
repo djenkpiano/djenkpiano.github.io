@@ -189,6 +189,13 @@ export const PIECES = [
     era: 'Contemporary',
   },
   {
+    id: 'un-reve',
+    title: 'Nocturne in D-Flat Major “Un rêve”',
+    composer: 'Eric Christian',
+    era: 'Contemporary',
+    aliases: ['un reve', 'nocturne in d flat major'],
+  },
+  {
     id: 'une-comptine',
     title: "D'une comptine d'un autre été",
     subtitle: 'Amélie',
