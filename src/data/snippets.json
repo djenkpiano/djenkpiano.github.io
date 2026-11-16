@@ -1,5 +1,14 @@
 [
   {
+    "id": 146,
+    "file": "Fantaisie Impromptu 545hrs.m4a",
+    "piece": "fantaisie-impromptu",
+    "hours": 545,
+    "date": "2026-11-16",
+    "note": "",
+    "type": "audio"
+  },
+  {
     "id": 145,
     "file": "Un reve 545hrs.m4a",
     "piece": "un-reve",
